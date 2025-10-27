@@ -44,10 +44,9 @@ export default {
         }
       })
     },
+    // testee
     deleteTodo(id){
-      
       this.todos = this.todos.filter(todo => todo.id !== id)
-      
     },
     checkTodoAll(checked){
       this.todos.forEach(todo => todo.done = checked)
